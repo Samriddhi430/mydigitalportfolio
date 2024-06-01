@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --heading-color: #007bff;
+    --heading-hover-color: #0ef;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+
+
+/* Researcher Section */
+.researcher {
+    padding: 2rem 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.home-img img {
+    width: 35vw;
+    animation: alternate-reverse;
+}
+
+
+.intro {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .section {
+    margin-bottom: 3rem;
+}
+
+.content .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.content .section p,
+.content .section ul {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.content .section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content .section ul li {
+    margin-bottom: 1rem;
+}
+
+.content .section ul li b {
+    color: #007bff;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 1rem;
+}

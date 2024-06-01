@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --heading-color: #007bff;
+    --heading-hover-color: #0ef;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* DSA Journey Section */
+.dsa-journey {
+    padding: 2rem 9% 2rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+.home-img img {
+   
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.intro {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+}
+
+.section p,
+.section ul {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.5rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 500;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* Footer */
+.footer {
+    background: var(--second-bg-color);
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+
+.footer-text p {
+    font-size: 1.0rem;
+    color: var(--text-color);
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--second-bg-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+/* Breakpoints */
+@media (max-width: 1200px) {
+    .dsa-journey {
+        padding: 10rem 3% 2rem;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+    .intro, .section p, .section ul, .footer-text p {
+        font-size: 1.4rem;
+    }
+}
